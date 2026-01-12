@@ -28,9 +28,23 @@ print(acc.account_number)
 print(acc.balance)
 
 
-⚠️ **중요**  
-```python  
+import random
 
-README Q1 설명 추가
+class Account:
+    # 🔹 클래스 변수 (계좌 개수)
+    account_count = 0
+
+    def __init__(self, owner, balance):
+        self.bank = "SC은행"
+        self.owner = owner
+        self.balance = balance
+        self.account_number = self.create_account_number()
+
+        # 🔹 계좌 생성될 때마다 +1
+        Account.account_count += 1
+
+    def create_account_number(self):
+        return f"{random.randint(100,999)}-{random.randint(10,99)}-{random.randint(100000,999999)}"
+
 
 
