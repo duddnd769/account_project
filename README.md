@@ -46,5 +46,21 @@ class Account:
     def create_account_number(self):
         return f"{random.randint(100,999)}-{random.randint(10,99)}-{random.randint(100000,999999)}"
 
+acc1 = Account("정영웅", 1000)
+acc2 = Account("홍길동", 2000)
+acc3 = Account("김철수", 3000)
+
+Account.get_account_num()
+
+acc1 = Account("정영웅", 1000)
+acc2 = Account("홍길동", 2000)
+acc3 = Account("김철수", 3000)
+
+Account.get_account_num()
+
+
+
+
+
 
 
