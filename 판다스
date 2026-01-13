@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 scores = pd.Series({
     '김철수': 85,
     '이영희': 92,
